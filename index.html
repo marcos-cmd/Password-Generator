@@ -26,6 +26,7 @@
                     <br />
                     <h4>Generate Password Here</h4>
                     <br />
+
                     <!--Password Textbox shows the generated password-->
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -35,30 +36,34 @@
                             aria-describedby="inputGroup-sizing-default">
                     </div>
                     <br />
+
                     <!--Slider controls the character count of the generated password-->
                     <input type="range" min="0" max="50" name="slider" id="slider">
                     <!--length div describes the character count of the generated password-->
                     <div id="length"></div>
                     <br />
+
                     <!--This button generates a password-->
                     <button type="button" class="btn btn-primary">Generate</button>
+
                     <!--This button copies the password to the clipboard-->
                     <button type="button" class="btn btn-warning">Copy to Clipboard</button>
                 </div>
             </div>
-             <!--This div shows previously generated passwords-->
-             <div class="previousPasswords">
+
+            <!--This div shows previously generated passwords-->
+            <div class="previousPasswords">
                 <br />
                 <h5>Previously Generated Passwords</h5>
                 <br />
                 <div class="card" id="prevPass" style="width: 18rem;">
                     <div class="card-body">
-                      <h5 class="card-title"></h5>
-                      <p class="card-text"></p>
-                      <button type="button" class="btn btn-warning">Copy to Clipboard</button>
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-warning">Copy to Clipboard</button>
                     </div>
-                  </div>
-              </div>
+                </div>
+            </div>
         </div>
     </div>
 
