@@ -2,16 +2,37 @@ var generateBtn = document.querySelector("#generate");
 var copyBtn = document.querySelector("#copy");
 var copyBtn2 = document.querySelector("#copy2");
 var display = document.querySelector("#password");
+var caps = document.querySelector("#caps");
+var numbers = document.querySelector("#numbers");
+var sym = document.querySelector("#symbols");
 
+ //possible password characters
+ let characters = "abcdefghijklmnopqrstuvwxyz";
+
+ let capChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+ let numChar = "1234567890";
+ let symChar = "!@#$%^&*()_+';";
+
+ caps.addEventListener('change', function(event) {
+    characters += capChar;
+    console.log("caps added");
+ });
+
+ numbers.addEventListener('change', function(event) {
+    characters += numChar;
+    console.log("caps added");
+ });
+
+ sym.addEventListener('change', function(event) {
+    characters += symChar;
+    console.log("caps added");
+ });
 
 //generate random password when you click generateBtn
 generateBtn.addEventListener("click", function (event) {
 
     //set password length/complexity
     const complexity = document.getElementById("slider").value;
-
-    //possible password characters
-    const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+";
 
     let password = "";
 
