@@ -2,7 +2,7 @@
 
 ##Screenshot of Website
 
-![index.html of password generator](assets/screen.png)
+![index.html of password generator](Assets/screen.png)
 
 ## Link to Live
 
