@@ -20,4 +20,5 @@ https://marcos-cmd.github.io/Password-Generator/
 5. Alert disappears after 3 seconds
 6. Previously generated passwords show up in additional card
 7. Button that will copy a highlighted previous password of your choice
+8. Checkboxes that will add Capitalized letters, numbers, and symbols accordingly
 
