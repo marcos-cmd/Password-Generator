@@ -2,7 +2,7 @@ var generateBtn = document.querySelector("#generate");
 var copyBtn = document.querySelector("#copy");
 var copyBtn2 = document.querySelector("#copy2");
 var display = document.querySelector("#password");
-var slider = document.querySelector("#length");
+
 
 //generate random password when you click generateBtn
 generateBtn.addEventListener("click", function (event) {
