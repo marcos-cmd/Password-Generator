@@ -1,6 +1,6 @@
 var generateBtn = document.querySelector("#generate");
 var copyBtn = document.querySelector("#copy");
-var copy2Btn = document.querySelector("#copy2");
+var copyBtn2 = document.querySelector("#copy2");
 var display = document.querySelector("#password");
 
 //generate random password when you click generateBtn
@@ -23,7 +23,7 @@ generateBtn.addEventListener("click", function (event) {
     display.value = password;
 
     //add password to previously generated passwords section
-    document.getElementById("prevPass").innerHTML += password + "<br />";
+    document.getElementById("prevPass").innerHTML += password + "<hr>" + "<br />";
 });
 
 //function to copy password to clipboard
@@ -35,3 +35,13 @@ copyBtn.addEventListener("click", function (event) {
         $("#success").hide(1000);
     }, 3000);
 });
+
+//function to copy previously generated password that is highlighted
+copyBtn2.addEventListener("click", function(event) {
+    document.execCommand("Copy");
+    $("#success").show();
+    setTimeout(function () {
+        $("#success").hide(1000);
+    }, 3000);
+});
+
