@@ -4,5 +4,6 @@
 
 #length {
     display: inline-block;
-    width: 100px;
+    width: 100%;
+    text-align: center;
 }

@@ -2,6 +2,7 @@ var generateBtn = document.querySelector("#generate");
 var copyBtn = document.querySelector("#copy");
 var copyBtn2 = document.querySelector("#copy2");
 var display = document.querySelector("#password");
+var slider = document.querySelector("#length");
 
 //generate random password when you click generateBtn
 generateBtn.addEventListener("click", function (event) {
@@ -37,7 +38,7 @@ copyBtn.addEventListener("click", function (event) {
 });
 
 //function to copy previously generated password that is highlighted
-copyBtn2.addEventListener("click", function(event) {
+copyBtn2.addEventListener("click", function (event) {
     document.execCommand("Copy");
     $("#success").show();
     setTimeout(function () {
@@ -45,3 +46,14 @@ copyBtn2.addEventListener("click", function(event) {
     }, 3000);
 });
 
+//set default slider length to 25
+document.getElementById("length").innerHTML = "Length: 25";
+
+document.getElementById("slider").oninput = function () {
+    if (document.getElementById("slider").value > 0) {
+        document.getElementById("length").innerHTML = "Length: " + document.getElementById("slider").value;
+    }
+    else {
+        document.getElementById("length").innerHTML = "Length: 1";
+    }
+}
