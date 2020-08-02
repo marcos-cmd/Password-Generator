@@ -49,6 +49,7 @@ copyBtn2.addEventListener("click", function (event) {
 //set default slider length to 25
 document.getElementById("length").innerHTML = "Length: 25";
 
+//function that sets length based on the slider position
 document.getElementById("slider").oninput = function () {
     if (document.getElementById("slider").value > 0) {
         document.getElementById("length").innerHTML = "Length: " + document.getElementById("slider").value;
