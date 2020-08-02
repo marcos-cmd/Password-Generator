@@ -20,12 +20,12 @@ var sym = document.querySelector("#symbols");
 
  numbers.addEventListener('change', function(event) {
     characters += numChar;
-    console.log("caps added");
+    console.log("num added");
  });
 
  sym.addEventListener('change', function(event) {
     characters += symChar;
-    console.log("caps added");
+    console.log("sym added");
  });
 
 //generate random password when you click generateBtn
